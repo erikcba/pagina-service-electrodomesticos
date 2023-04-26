@@ -165,11 +165,20 @@ html{
 }
 
 .caracteristicas__container {
-  background-color: var(--color-seccion-intermedia);
   height: 300px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.caracteristicas__container-de-tarjetas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68.5%;
+  border-radius: 8px;
+  background-color: var(--color-seccion-intermedia);
+  padding: 20px;
 }
 
 .titulo__seccion {
@@ -203,7 +212,7 @@ html{
 
 .tarjeta-caracteristicas p {
   font-size: 1.1rem;
-  font-weight: 550;
+  font-weight: bold;
   color: #1c365e;
 }
 
@@ -215,6 +224,9 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
+  -moz-box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
+  box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
 }
 
 .tarjeta-img img {
@@ -345,8 +357,8 @@ html{
 
 .boton__wsp:hover{
   cursor: pointer;
-  background-color: rgb(131, 204, 21);
-  transition: ease-in-out 0.2s;
+  background-color: rgb(55, 204, 21);
+  transition: ease-in-out 0.1s;
 }
 
 .cotizacion__texto-parrafo {
@@ -362,7 +374,7 @@ html{
   justify-content: center;
   flex-direction: column;
   gap: 75px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .servicio-tecnico-tarjetas__container {
@@ -408,7 +420,11 @@ html{
   width: 300px;
   background-color: var(--color-principal);
   border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
+  -moz-box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
+  box-shadow: 0px 0px 20px -8px rgba(48,48,48,0.75);
 }
+
 
 .servicio-tecnico__tarjeta img{
   height: 70%;
@@ -427,4 +443,21 @@ html{
 
 .horno-electrico img{
   width: 80%;
+}
+
+.acerca-de__seccion {
+  margin-top: 100px;
+  height: 700px;
+}
+
+.acerca-de__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca-de__texto .encabezado__subtitulo{
+  color: var(--color-secundario);
+  font-weight: bold;
 }

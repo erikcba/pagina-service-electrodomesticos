@@ -43,23 +43,25 @@ html{
 .logo {
   height: 82px;
   width: 82px;
+  border-radius: 8px;
 }
 
-.nav__menu {
-  display: flex;
-  margin: 10px;
-  font-size: 1.2rem;
-  font-weight: 500;
+.navegacion .header__icono {
+  display: none;
 }
 
-#navbar {
+.navegacion .menu__item--oculto {
+  display: none; 
+}
+
+.nav {
   background-color: #1c365e;
   font-weight: bold; 
   height: 100%;
   display: flex;
 }
 
-#navbar ul {
+.nav ul {
   list-style: none;
   margin: 0;
   display: flex;
@@ -68,7 +70,7 @@ html{
   height: 100%;
 }
 
-#navbar li  {
+.nav li  {
   text-decoration: none;
   color: white;
   position: relative;
@@ -80,7 +82,7 @@ html{
   text-align: left;
 }
 
-#navbar a::after {
+.nav a::after {
   content: "";
   position: absolute;
   display: block;
@@ -91,11 +93,11 @@ html{
   transition: all ease-in-out 250ms;
 }
 
-#navbar a:hover::after {
+.nav a:hover::after {
   width: 62%;
 }
 
-#navbar li:hover {
+.nav li:hover {
   color: #C70039;
 }
 
@@ -160,7 +162,7 @@ html{
 
 .boton__contacto button:hover {
   cursor: pointer;
-  background-color: #d5023e;
+  background-color: #e20342;
   transition: ease-in-out 0.2s;
 }
 
@@ -265,6 +267,7 @@ html{
 .tecnico-img img {
   width: 50%;
   height: 100%;
+  border-radius: 6px;
 }
 
 .servicios__texto {
@@ -558,4 +561,215 @@ html{
 .footer__redes img {
   height: 32px;
   width: 32px;
+}
+
+@media screen and (max-width: 1441px) {
+
+  .tecnico-img img {
+    width: 73%;
+  }
+
+  .cotizacion__container {
+    width: 80%;
+  }
+
+  .cotizacion__contenido {
+    gap: 20px;
+  }
+
+  .servicio-tecnico-tarjetas__container {
+    width: 90%;
+  }
+
+  .servicio-tecnico-contenedor {
+    gap: 50px;
+  }
+
+  .caracteristicas__container-de-tarjetas {
+    width: 87%;
+  }
+
+  .acerca-de__seccion .titulo__seccion {
+    text-align: center;
+  }
+
+  .ubicacion__elementos {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .cotizacion__boton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__elementos {
+    width: 90%;
+  }
+
+  .footer__container::before {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .encabezado__texto {
+    padding: 10px 0;
+  }
+
+  .servicios__elementos {
+    gap: 50px;
+    width: auto;
+    padding-bottom: 120px;
+  }
+
+  .tecnico-img {
+    display: none;
+  }
+
+  .servicios__texto {
+    width: 100%;
+  }
+
+  .servicios__texto li {
+    line-height: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .cotizacion__container {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .cotizacion__contenido {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cotizacion__texto {
+    width: 100%;
+  }
+
+  .cotizacion__texto-titulo {
+    text-align: center;
+  }
+
+  .cotizacion__texto-titulo::after {
+    left: 115px;
+  }
+
+  .cotizacion__texto-parrafo {
+    text-align: center;
+  }
+
+  .cotizacion__boton {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .servicio-tecnico-tarjetas__container {
+    width: 90%;
+    
+  }
+
+  .servicio-tecnico-contenedor {
+    gap: 50px
+  }
+
+  .caracteristicas__container-de-tarjetas {
+    width: 85%;
+  }
+
+  .tarjetas-caracteristicas__container{
+    gap: 20px;
+  }
+  .acerca-de__seccion {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .acerca-de__texto {
+    width: 90%;
+  }
+
+  .acerca-de__seccion .titulo__seccion {
+    text-align: center;
+  }
+
+  .ubicacion__elementos {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .footer__elementos {
+    width: 90%;
+  }
+
+  .footer__container::before {
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 599px) {
+
+  header {
+    width: 100%;
+}
+
+.nav {
+    display: block;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000000;
+    width: 70%;
+    height: 100vh;
+    transition: left 1s;
+ }
+
+.nav:target {
+    display: block;
+    left: 0; 
+}
+
+.nav ul {
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100vh;
+  gap: 2rem;
+  width: 100%;
+  padding: 0;
+  background-color:#16161a;
+}
+.navegacion .menu__item--oculto {
+  display: block;
+}
+
+.navegacion .header__icono {
+  display: block; 
+}
+
+.tarjetas-caracteristicas__container {
+  flex-direction: column;
+}
+
+.ubicacion__mapa iframe{
+  width: 60%;
+  
+}
+
+.acerca-de__seccion .titulo__seccion {
+font-size: 1.2rem;}
+
+.servicio-tecnico-titulo::after {
+  width: 60%;
+}
+
 }

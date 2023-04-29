@@ -7,6 +7,7 @@
     <title>Service Arroyo</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8ed1cf9c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -17,20 +18,32 @@
                 <img src="./imagenes/logo.jpg" alt="logo" class="logo">
             </a>
 
-            <div id='navbar'>
+            <a href="#abierto" class="header__icono">
+                <i class="fa-solid fa-bars"></i>
+            </a> 
 
-                <ul>
-                  <li><a href="#">Inicio</a></li>
+            <nav class="nav" id="abierto">
 
-                  <li><a href="#servicios">Servicios</a></li>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
 
-                  <!-- <li><a href="#">Acerca de</a></li> -->
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
 
-                  <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+
+                    <li class="menu__item--oculto">
+                        <a href="#cerrado"><i class="fa-solid fa-circle-xmark"></i></a>
+                    </li>
 
                 </ul>
 
-              </div>
+            </nav>
 
         </div>
 
@@ -53,8 +66,9 @@
             </div>
             
             <div class="boton__contacto">
+
                 <button class="btn__principal">Contactar ahora</button>
-                <button class="btn__secundario">Mas información</button>
+                <!-- <button class="btn__secundario">Mas información</button> -->
             </div>
             
 
@@ -102,7 +116,7 @@
                     <div class="cotizacion__boton">
                         <button class="boton__wsp">
                             <img src="./imagenes/whatsapp.png" alt="">
-                            <p>Contacto</p>
+                            <p>Contactar por Whatsapp</p>
                         </button>
                     </div>
 
@@ -264,7 +278,7 @@
 
     </main>
 
-    <section class="ubicacion__container">
+    <section class="ubicacion__container" id="contacto">
 
         <div class="ubicacion__elementos">
 
@@ -354,6 +368,5 @@
         AOS.init();
     </script>
 
-    
 </body>
 </html>

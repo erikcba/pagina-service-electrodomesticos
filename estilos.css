@@ -616,6 +616,7 @@ html{
 @media screen and (max-width: 1023px) {
   .encabezado__texto {
     padding: 10px 0;
+    text-align: center;
   }
 
   .servicios__elementos {
@@ -721,6 +722,11 @@ html{
     width: 100%;
 }
 
+.navegacion {
+  padding: 10px 0;
+  height: auto;
+}
+
 .nav {
     display: block;
     background-color: white;
@@ -746,7 +752,15 @@ html{
   gap: 2rem;
   width: 100%;
   padding: 0;
-  background-color:#16161a;
+  background-color:var(--color-principal);
+}
+
+.nav li {
+  height: auto;
+}
+
+.nav a::after {
+  top: 1.4em;
 }
 .navegacion .menu__item--oculto {
   display: block;
@@ -754,6 +768,77 @@ html{
 
 .navegacion .header__icono {
   display: block; 
+}
+
+.encabezado-container {
+  padding-top: 110px;
+
+}
+
+.boton__contacto .btn__principal {
+  margin-top: 20px;
+}
+
+.servicios__elementos {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.servicios__texto {
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.servicios__texto h2{
+  font-size: 1.5rem;
+}
+
+.servicios__texto h2::after {
+  width: 75%;
+}
+
+.servicios__texto li {
+  list-style: none;
+}
+
+.cotizacion__container {
+  margin-bottom: 60px;
+}
+
+.cotizacion__texto-titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cotizacion__texto-titulo::after {
+  top: auto;
+  right: 50px;
+  left: 50px;
+  width: 60%;
+}
+
+.servicio-tecnico-titulo {
+  font-size: 1.5rem;
+}
+
+.servicio-tecnico-tarjetas__container .titulo-servicios {
+  font-size: 1.4rem;
+  padding: 60px 20px;
+}
+
+.servicio-tecnico__tarjeta {
+  width: 90%;
+}
+
+.servicio-tecnico__tarjeta .tarjeta__titulo{
+  padding: 15px 0;
+}
+
+.caracteristicas__container {
+  height: auto;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
 }
 
 .tarjetas-caracteristicas__container {

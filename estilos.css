@@ -836,13 +836,21 @@ html{
 
 .caracteristicas__container {
   height: auto;
-  width: 90%;
   justify-content: center;
   align-items: center;
 }
 
+.caracteristicas__container-de-tarjetas {
+  padding: 20px 0;
+  width: 90%;
+}
+
 .tarjetas-caracteristicas__container {
   flex-direction: column;
+}
+
+.tarjeta-caracteristicas {
+  width: 80%;
 }
 
 .ubicacion__mapa iframe{
@@ -851,10 +859,58 @@ html{
 }
 
 .acerca-de__seccion .titulo__seccion {
-font-size: 1.2rem;}
+font-size: 1.4rem;
+}
+
+.acerca-de__seccion .encabezado__subtitulo {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 .servicio-tecnico-titulo::after {
   width: 60%;
+}
+
+.ubicacion__elementos {
+  padding: 30px 0;
+}
+
+.ubicacion__mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ubicacion__mapa iframe {
+  width: 90%;
+}
+
+.ubicacion__texto .titulo__seccion{
+  font-size: 1.5rem;
+}
+
+.ubicacion__texto .cotizacion__texto-parrafo {
+  font-size: 1.1rem;
+}
+
+.footer__container {
+  height: auto;
+}
+
+.footer__elementos {
+  flex-direction:column-reverse;
+  gap: 10px;
+}
+
+.footer__texto {
+  width: auto;
+  font-size: 0.6rem;
+}
+
+.footer__redes {
+  width: auto;
+  padding-top: 10px;
 }
 
 }

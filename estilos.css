@@ -8,6 +8,7 @@
 	border: none;
 	outline: none;
   font-family: 'Montserrat', sans-serif;
+  scroll-padding-top: 100px;
 }
 
 html{
@@ -99,6 +100,17 @@ html{
 
 .nav li:hover {
   color: #C70039;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 75px;
+  right: 150px;
+  z-index: 5000;
+}
+
+.whatsapp:hover {
+  cursor: pointer;
 }
 
 .encabezado-container {
@@ -594,8 +606,11 @@ html{
   }
 
   .ubicacion__elementos {
-    flex-direction: column;
     width: 90%;
+  }
+
+  .ubicacion__mapa iframe {
+    padding-left: 30px;
   }
 
   .cotizacion__boton {
@@ -611,6 +626,12 @@ html{
     width: 90%;
   }
 
+}
+
+@media screen and (max-width: 1440px){
+  .cotizacion__texto-titulo::after {
+    top: 80px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -657,7 +678,8 @@ html{
   }
 
   .cotizacion__texto-titulo::after {
-    left: 115px;
+    left: 140px;
+    top: 50px;
   }
 
   .cotizacion__texto-parrafo {
@@ -768,6 +790,11 @@ html{
 
 .navegacion .header__icono {
   display: block; 
+}
+
+.whatsapp {
+  left: 30px;
+  bottom: 30px;
 }
 
 .encabezado-container {

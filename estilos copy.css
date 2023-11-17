@@ -510,7 +510,7 @@ html {
 
 .acerca-de__seccion {
   position: absolute;
-  bottom: 150px;
+  bottom: 50px;
   left: 0;
   right: 0;
   display: flex;

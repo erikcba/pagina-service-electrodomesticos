@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos copy.css">
     <script src="https://kit.fontawesome.com/b8ed1cf9c3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -64,23 +64,51 @@
 
         <section class="encabezado-container">
 
+            <div class="encabezado__contenido">
 
+                <div class="encabezado__texto">
+                    <img class="logo" src="./imagenes/logo-con-texto.jpeg" alt="">
+                    <p class="encabezado__subtitulo">Reparación de heladeras, lavarropas, aire acondicionado
+                        y más<br> Presupuestos sin cargo. Enviá tu consulta acá!</p>
 
+                        <div class="boton__contacto">
 
-            <div class="encabezado__texto">
-                <span class="encabezado__titulo">Servicio técnico Arroyo</span>
-                <p class="encabezado__subtitulo">Reparación de heladeras, lavarropas, exhibidoras comerciales , freezers
-                    y más.<br> Presupuestos sin cargo. Enviá tu consulta acá!</p>
+                            <button class="btn__principal">Contactar ahora</button>
+            
+                        </div>
+                </div>
+    
+                <div class="encabezado__imagen">
+                    <!-- <img src="./imagenes/tecnico-fondojpg.jpg" alt=""> -->
+                    <div class="glass"></div>
+                </div>
+
+            </div>
+            
+
+            <div class="acerca-de__seccion">
+
+                <div class="acerca-de__texto" data-aos="fade-up">
+    
+                    <p class="titulo__seccion">Más de 30 años al servicio de la venta y reparación de ELECTRODOMÉSTICOS</p>
+    
+                    <p class="encabezado__subtitulo">
+                        Somos una empresa familiar con gran trayectoria en el rubro. Brindamos excelente atención al
+                        cliente, servicio de calidad y eficiencia en el trabajo
+                    </p>
+    
+                </div>
+    
             </div>
 
-            <div class="boton__contacto">
+            
 
-                <button class="btn__principal">Contactar ahora</button>
-
-            </div>
+            
 
 
         </section>
+
+        <section class="linea"></section>
 
 
 
@@ -142,28 +170,6 @@
                 <div class="testimonios-contenido">
                     <div class="swiper testimonios-slider js-testimonios-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide testimonio-item">
-                                <div class="info">
-                                    <img class="testimonio-img" src="./imagenes/istockphoto-1075886544-2048x2048.jpg"
-                                        alt="">
-                                    <div class="text-box">
-                                        <h3 class="nombre">Graciela Gomez</h3>
-                                        <span class="ocupacion">Ama de casa</span>
-                                    </div>
-                                </div>
-
-                                <p>Excelente servicio, personal capacitado y honesto, siempre los recomendamos, trabajos
-                                    garantizado en tiempo y forma. Diversas formas de pago.</p>
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-
-                                </div>
-
-                            </div>
 
                             <div class="swiper-slide testimonio-item">
                                 <div class="info">
@@ -489,6 +495,7 @@
 
                         <p class="titulo__seccion">Comunicate al</p>
                         <p class="cotizacion__texto-parrafo">Whatsapp: +54 9 351-5081827</p>
+                        <p class="cotizacion__texto-parrafo">Fijo: 4805204 - 4882080 </p>
 
                     </div>
 
@@ -570,8 +577,11 @@
                 clickable: true
             },
             breakpoints:{
-                600:{
-                    slidesPerView: 2,
+                700: {
+                    slidesPerView:2,
+                },
+                1024:{
+                    slidesPerView: 3,
                 }
             }
         })

@@ -114,7 +114,7 @@ html {
 }
 
 .encabezado-container {
-  background-image: url(./imagenes/tecnico-fondojpg.jpg);
+  background-image: url(./imagenes/tecnico-fondojpg1.jpg);
   /* background-image: ; */
   background-position: center;
   background-repeat: no-repeat;
@@ -757,6 +757,20 @@ html {
     width: 73%;
   }
 
+  .servicios__texto {
+    width: auto;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .servicios__texto li {
+    line-height: 1.3rem;
+  }
+
+  .encabezado__contenido {
+    margin-bottom: 20px;
+  }
+
   .cotizacion__container {
     width: 80%;
   }
@@ -805,6 +819,10 @@ html {
 }
 
 @media screen and (max-width: 1440px) {
+  .servicios__texto h2 {
+    padding-bottom: 10px;
+  }
+
   .cotizacion__texto-titulo::after {
     top: 80px;
   }
@@ -833,6 +851,10 @@ html {
   .servicios__texto li {
     line-height: 1.5rem;
     padding: 10px 0;
+  }
+
+  .servicios__elementos {
+    padding-bottom: 30px;
   }
 
   .cotizacion__container {
@@ -1080,7 +1102,7 @@ html {
 
   .section-header .titulo__seccion::after {
     width: 60%;
-    top: 120px;
+    top: 80px;
   }
 
   .container {
@@ -1155,6 +1177,12 @@ html {
   .footer__redes {
     width: auto;
     padding-top: 10px;
+  }
+
+  @media screen and (max-width: 350px) {
+    .section-header .titulo__seccion::after {
+      top: 120px;
+    }
   }
 
 }

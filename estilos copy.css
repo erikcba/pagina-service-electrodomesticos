@@ -137,6 +137,10 @@ html {
   margin-bottom: 100px;
 }
 
+.encabezado__icono {
+  width: 75%;
+}
+
 .encabezado__imagen {
   /* background-image: url(./imagenes/tecnico-fondojpg.jpg); */
   overflow: hidden;
@@ -174,7 +178,7 @@ html {
   width: 50%;
   border-radius: 8px;
   height: fit-content;
-  z-index:1;
+  z-index: 1;
 }
 
 .encabezado__texto h1 {
@@ -210,7 +214,7 @@ html {
 .boton__contacto button {
   padding: 8px 12px;
   font-size: 1.3rem;
-  margin-top: 30px;
+
 }
 
 .btn__principal {
@@ -272,6 +276,7 @@ html {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
+  position: relative;
 }
 
 
@@ -455,7 +460,6 @@ html {
 }
 
 .servicio-tecnico__container {
-  padding-top: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -578,6 +582,22 @@ html {
   color: hsl(0, 0%, 100%);
   line-height: 1.2;
 }
+
+.testimonios {
+  margin: 75px 0;
+}
+
+.section-header .titulo__seccion::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.2em;
+  background-color: #C70039;
+  width: 35%;
+  top: 40px;
+}
+
+
 
 .testimonio {
   padding: 100px 0;
@@ -867,7 +887,6 @@ html {
   }
 
   .acerca-de__seccion {
-    margin: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -961,13 +980,33 @@ html {
 
   }
 
+  .encabezado__contenido {
+    margin-bottom: 25px;
+  }
+
+  .encabezado__texto {
+    width: 90%;
+    align-items: center;
+  }
+
+  .encabezado__texto p {
+    text-align: center;
+  }
+
   .boton__contacto .btn__principal {
     margin-top: 20px;
   }
 
+  .whatsapp img {
+    width: 50px;
+  }
+
+  .linea {
+    margin: 50px auto;
+  }
+
   .servicios__elementos {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    display: none;
   }
 
   .servicios__texto {
@@ -1033,6 +1072,19 @@ html {
   .caracteristicas__container-de-tarjetas {
     padding: 20px 0;
     width: 90%;
+  }
+
+  .titulo__seccion {
+    width: 90%;
+  }
+
+  .section-header .titulo__seccion::after {
+    width: 60%;
+    top: 120px;
+  }
+
+  .container {
+    max-width: 90%;
   }
 
   .tarjetas-caracteristicas__container {

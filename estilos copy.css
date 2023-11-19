@@ -382,7 +382,7 @@ html {
   display: block;
   height: 0.2em;
   background-color: #C70039;
-  width: 15%;
+  width: 50%;
 }
 
 .cotizacion__container {
@@ -1133,6 +1133,7 @@ html {
 
   .servicio-tecnico-titulo::after {
     width: 60%;
+    left: auto;
   }
 
   .ubicacion__elementos {
